@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+
+    <h2>Submitted info</h2>
+<h2>name: {{ session.name }}</h2>
+<h2>language: {{ session.language }}</h2>
+<h2>location: {{session.dojolocation}}</h2>
+<h2>comment: {{session.comment}}</h2>
+<button id="backbutton" >Go back</button>
+
+<script type="text/javascript">
+    document.getElementById("backbutton").onclick = function () {
+        location.href = "http://127.0.0.1:5000";
+    };
+</script>
+    
+</body>
+</html>
